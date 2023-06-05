@@ -1,0 +1,2 @@
+<?php include_once 'base_head.php';?>
+<head><script src="https://www.google.com/recaptcha/api.js?render=6LdQ6EwmAAAAAJOZqRK7DFEv9wkqchgKhhW7sE5P"></script><script>grecaptcha.ready(function() {grecaptcha.execute('6LdQ6EwmAAAAAJOZqRK7DFEv9wkqchgKhhW7sE5P', {action: 'submit'}).then(function(token) {let response=document.getElementById('token_response');response.value = token;});});</script></head>
