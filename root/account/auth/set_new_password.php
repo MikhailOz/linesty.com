@@ -5,7 +5,7 @@
         <?php include_once '../components/includes/authentication_header.php' ?>
         <main class="flex flex-col gap-y-4 w-full sm:w-[28rem] mx-auto mb-9 px-5 sm:px-0">
             <div class="mt-6">
-                <h1 class="text-2xl font-medium font-poppins text-white">Reset Password</h1>
+                <h1 class="text-xl font-medium font-poppins text-white sm:text-2xl">Reset Password</h1>
                 <p class="mt-1 font-poppins text-base font-normal leading-tight text-white sm:text-lg sm:leading-tight">Enter your new password below containing at least 8 characters</p>
             </div>  
             <form method="post" class="new-password-form flex flex-col gap-y-4" id="form">
