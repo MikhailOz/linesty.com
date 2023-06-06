@@ -5,7 +5,7 @@
         <?php include_once '../components/includes/authentication_header.php' ?>
         <main class="flex flex-col gap-y-4 w-full sm:w-[28rem] mx-auto px-5 sm:px-0">
             <div class="mt-6">
-                <h1 class="text-2xl font-medium font-poppins text-white">Create your Linesty Account</h1>
+                <h1 class="text-xl font-medium font-poppins text-white sm:text-2xl">Create your Linesty Account</h1>
                 <p class="mt-1 font-poppins text-base font-normal leading-tight text-white sm:text-lg sm:leading-tight">By creating an account, you agree to <br>Linesty's <a class="transition-colors duration-100 font-semibold text-lavenderIndigo hover:text-electricViolet" href="/"> terms of service</a></p>
             </div>  
             <form method="post" class="signup-form flex flex-col gap-y-4" id="form">

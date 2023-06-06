@@ -28,7 +28,7 @@
                 <div class="auth-checkbox-container">  
                   <input class="inp-cbx hidden" id="cbx" type="checkbox" />
                   <label class="cbx margin-auto select-none cursor-pointer" for="cbx">
-                    <span class="inline-block w-[18px] h-[18px] mb-[1.7px] relative translate-x-0 translate-y-0 align-middle rounded-[3px] transform scale-100 align-middle border border-solid border-stoneGray transition-all duration-150">
+                    <span class="inline-block w-[18px] h-[18px] mb-[1.4px] relative translate-x-0 translate-y-0 align-middle rounded-[3px] transform scale-100 align-middle border border-solid border-stoneGray transition-all duration-150">
                     <svg class="absolute top-1 left-[3.5px] translate-x-0 translate-y-0 transition-all duration-200 delay-100 fill-none stroke-2 stroke-white" width="11px" height="9px" viewbox="0 0 12 10">
                       <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
                     </svg>

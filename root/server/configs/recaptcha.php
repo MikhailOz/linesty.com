@@ -32,7 +32,6 @@ function validateRecaptcha() {
             'error' => 'Your request has been blocked by reCAPTCHA. Please attempt again at a later time'
         );
     } else {
-        return;
         return array(
             'error' => 'We are experiencing reCAPTCHA functionality issues, receiving unsuccessful responses. Try to reload the page'
         );
