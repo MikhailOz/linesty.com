@@ -27,7 +27,7 @@
                   </div>      
                 </div>
                 <div class="mt-4 w-full">
-                  <button class="relative w-full py-2 rounded-full transition duration-150 cursor-pointer font-poppins text-base font-normal text-white bg-majorelleBlue hover:bg-electricViolet active:bg-blueViolet" id="submit_button" type="submit">
+                  <button class="relative w-full py-2 rounded-full transition duration-150 cursor-pointer font-poppins text-base font-normal text-white bg-majorelleBlue hover:bg-electricViolet active:bg-majorelleBlue" id="submit_button" type="submit">
                     Confirm
                   </button>
                 </div>

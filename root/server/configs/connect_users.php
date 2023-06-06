@@ -13,6 +13,5 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->exec("SET NAMES utf8");
 } catch(PDOException $e) {
-    header("HTTP/1.0 500 Not Found");
-    exit();
+    header("/");
 }
