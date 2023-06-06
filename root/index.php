@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en" class="loading">
   <?php include 'components/includes/base_head.php'?>
@@ -10,10 +11,13 @@
               <li><a class="font-poppins text-base font-normal text-white hover:text-electricViolet" href="/">About us</a></li>
               <li><a class="font-poppins text-base font-normal text-white hover:text-electricViolet" href="/">Blog</a></li>
               <li><a class="font-poppins text-base font-normal text-white hover:text-electricViolet" href="/">Roadmap</a></li>
-              <li><a class="font-poppins text-base font-normal text-white hover:text-electricViolet" href="/account">Account</li>
+              <li><a class="font-poppins text-base font-normal text-white hover:text-electricViolet" href="/account">Account</a></li>
             </ul>
         </header>
       </div>
+      <script src="/components/js/createElement.js"></script>
+      <script src="/components/js/alerts.js"></script>
+      <?php include_once 'components/includes/misc/push_session_upper_alerts.php'?>
     </body>
 </html>
     

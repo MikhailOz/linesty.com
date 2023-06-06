@@ -13,10 +13,6 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->exec("SET NAMES utf8");
 } catch(PDOException $e) {
-    $response = array(
-        'error' => 'Error connecting to the database'
-    );
-    header('Content-Type: application/json'); 
-    echo json_encode($response);
-    die();
+    header("HTTP/1.0 500 Not Found");
+    exit();
 }
