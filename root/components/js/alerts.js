@@ -69,7 +69,7 @@ class UpperAlertManager {
 		svg1.appendChild(path1);
 
 		const message = this.createElement('p', {
-			class: 'max-w-[450px] break-words font-poppins text-base font-normal text-white',
+			class: 'max-w-[450px] leading-5 break-words font-poppins text-base font-normal text-white sm:leading-6',
 		});
 		message.textContent = value;
 

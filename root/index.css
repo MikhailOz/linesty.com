@@ -1180,6 +1180,14 @@ video {
   line-height: 1.25;
 }
 
+.leading-5 {
+  line-height: 1.25rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
 .text-graphiteGray {
   --tw-text-opacity: 1;
   color: rgb(111 113 116 / var(--tw-text-opacity));
