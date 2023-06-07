@@ -171,6 +171,8 @@ class FormValidator {
             window.location.reload();
           } else if (data.success && data.success !== 'refresh') {
             upperAlertManager.pushAnUpperAlert('success', data.success);
+          } else if (data.redirect) {
+            window.location.href = data.redirect;
           }
         } else {
           upperAlertManager.pushAnUpperAlert('error', 'An error occurred while processing the script.');

@@ -21,8 +21,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $stmt->execute([$hashed_password, $email]);
 
       $_SESSION['success_upper_message'] = 'Password was successfully changed';
-      header('Location: /account');
-      exit();
+      $response = array(
+        'redirect' => 'http://' . $_SERVER['SERVER_NAME'] . '/account'
+      );
     } else {
       $response = array(
         'error' => 'An error occurred while updating your password'
