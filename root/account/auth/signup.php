@@ -46,7 +46,7 @@
         <br>
         <?php include_once '../components/includes/authentication_footer.php' ?>
     </div>
-    <div class="flex justify-center w-screen absolute top-8" id="alerts"></div>
+    <div class="flex justify-center w-screen fixed top-8" id="alerts"></div>
     <script src="/components/js/createElement.js"></script>
     <script src="/components/js/alerts.js"></script>
     <script src="/components/js/input.js"></script>
