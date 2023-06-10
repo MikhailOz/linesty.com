@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $updateStmt->bindValue(':expiry', date('Y-m-d H:i:s', strtotime('+1 hour')));
       $updateStmt->bindValue(':id', $user['id']);
       $updateStmt->execute();
-      $reset_link = "https://{$_SERVER['SERVER_NAME']}/account/?covery_token={$recovery_token}";
+      $reset_link = "https://{$_SERVER['SERVER_NAME']}/account/?recovery_token={$recovery_token}";
       send_recovery_email($email, $reset_link);
       $response = array('success' => 'Recovery of your password was sent successfully');
     }
