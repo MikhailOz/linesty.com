@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-include '../../configs/connect_users.php';
-include '../../mail/send_mail.php';
 include '../../configs/recaptcha.php';
 include 'input_validation.php';
 
@@ -13,6 +11,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
   if (isset($recaptcha_response['error'])) {
     $response = $recaptcha_response;
   } else {
+      include '../../configs/connect_users.php';
+      include '../../mail/send_mail.php';
+      
       $email = trim($_POST['email'] ?? '');
       $password = $_POST['password'] ?? '';
 

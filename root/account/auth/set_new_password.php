@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" class="loading">
+  <?php include_once '../components/includes/authentication_head.php' ?>
   <body class="h-screen overflow-x-hidden overflow-y-auto bg-midnightBlack">
-    <div class="justify-between h-full flex flex-col">
+    <?php include_once '../components/includes/misc/preloader.php' ?>
+      <div class="justify-between h-full flex flex-col">
         <?php include_once '../components/includes/authentication_header.php' ?>
         <main class="flex flex-col gap-y-4 w-full sm:w-[28rem] mx-auto mb-9 px-5 sm:px-0">
             <div class="mt-6">

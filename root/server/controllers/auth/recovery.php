@@ -1,8 +1,9 @@
-  <?php
+<?php
 
 session_start();
 include '../../configs/recaptcha.php';
 include 'input_validation.php';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $recaptcha_response = validateRecaptcha();
   validateInputs();
@@ -11,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   } else {
     include '../../configs/connect_users.php';
     include '../../mail/send_mail.php';
+    
     $email = trim($_POST['email'] ?? '');
     $query = "SELECT id, last_changed_pass, verified, recovery_token, recovery_token_expiry FROM accounts WHERE email=?";
     $stmt = $pdo->prepare($query);
@@ -39,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $updateStmt->bindValue(':expiry', date('Y-m-d H:i:s', strtotime('+1 hour')));
       $updateStmt->bindValue(':id', $user['id']);
       $updateStmt->execute();
-      $reset_link = "https://{$_SERVER['SERVER_NAME']}/account/?recovery_token={$recovery_token}";
+      $reset_link = "https://{$_SERVER['SERVER_NAME']}/account/?covery_token={$recovery_token}";
       send_recovery_email($email, $reset_link);
       $response = array('success' => 'Recovery of your password was sent successfully');
     }
