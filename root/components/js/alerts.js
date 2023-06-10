@@ -1,3 +1,4 @@
+"use strict";
 // CREATEELEMENT.JS SUPPOSED TO BE IMPORTED
 
 class UpperAlertManager {

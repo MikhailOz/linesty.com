@@ -103,12 +103,12 @@ class FormValidator {
   }
 
   fadeOutAndSetText(element, text) {
-    element.classList.replace('duration-75', 'duration-[50]');
+    element.classList.replace('duration-150', 'duration-100');
 
     setTimeout(() => {
       element.textContent = text;
-      element.classList.replace('duration-[50]', 'duration-75');
-    }, 40);
+      element.classList.replace('duration-100', 'duration-150');
+    }, 30);
   }
 
   hideError(element, title) {
@@ -124,7 +124,7 @@ class FormValidator {
       this.fadeOutAndSetText(element, message);
     }
   }
-
+ 
   async submitForm(url) {
     if (this.isSubmitting) {
       return;

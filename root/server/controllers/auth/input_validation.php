@@ -14,7 +14,7 @@ function validateInputs()
         if (isset($_POST["email"]) && !empty($_POST["email"])) {
             $response["email"] = $_POST["email"];
         }
-        header("Content-Type: application/json");
+        
         echo json_encode($response);
         exit();
     }
@@ -28,7 +28,7 @@ function validateInputs()
             $response = [
                 "error" => "Provided an invalid email address",
             ];
-            header("Content-Type: application/json");
+
             echo json_encode($response);
             exit();
         }
@@ -39,7 +39,7 @@ function validateInputs()
             $response = [
                 "error" => "Provided passwords do not match",
             ];
-            header("Content-Type: application/json");
+
             echo json_encode($response);
             exit();
         }
@@ -47,7 +47,7 @@ function validateInputs()
             $response = [
                 "error" => "Password must be at least 8 characters long",
             ];
-            header("Content-Type: application/json");
+
             echo json_encode($response);
             exit();
         }
@@ -55,7 +55,7 @@ function validateInputs()
             $response = [
                 "error" => "Password should contain at least one digit",
             ];
-            header("Content-Type: application/json");
+
             echo json_encode($response);
             exit();
         }
@@ -64,7 +64,7 @@ function validateInputs()
                 "error" =>
                     "Password should contain at least one lowercase letter",
             ];
-            header("Content-Type: application/json");
+
             echo json_encode($response);
             exit();
         }
@@ -73,7 +73,7 @@ function validateInputs()
                 "error" =>
                     "Password should contain at least one uppercase letter",
             ];
-            header("Content-Type: application/json");
+
             echo json_encode($response);
             exit();
         }

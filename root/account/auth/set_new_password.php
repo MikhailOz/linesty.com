@@ -11,7 +11,7 @@
             <form method="post" class="new-password-form flex flex-col gap-y-4" id="form">
                 <input type="hidden" id="token_response" name="token_response">
                 <div>
-                  <label class="cursor-pointer transition-all duration-75 select-none font-poppins text-base font-medium leading-none text-white" for="password" id="password_title">Password</label>
+                  <label class="cursor-pointer transition-all duration-150 select-none font-poppins text-base font-medium leading-none text-white" for="password" id="password_title">Password</label>
                   <div class="flex relative">
                     <svg class="absolute h-full w-[22px] stroke-white fill-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 28" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" /></svg>          
                     <input class="block-webkit-input w-full py-2 px-[2rem] outline-none border-b-2 text-lg font-poppins font-normal leading-none transition-colors duration-[120ms] bg-transparent text-white border-white focus:border-electricViolet placeholder:text-white" type="password" name="password" id="password" oninput="InputBlocker.blockValues(['space'], this);" autocorrect="off" autocapitalize="off" autocomplete="off" maxlength="256" placeholder="Enter your password">

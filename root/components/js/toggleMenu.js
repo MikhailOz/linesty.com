@@ -1,3 +1,5 @@
+"use strict";
+
 let nav = document.querySelector(".nav-container"),
 togglers = document.getElementsByClassName("nav-interactor"),
 open = !1;

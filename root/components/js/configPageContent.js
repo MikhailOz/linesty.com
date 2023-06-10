@@ -1,3 +1,5 @@
+"use strict";
+
 self_script = document.getElementById("self_config_content");
 title_element = document.getElementById("page_title");
 subtitle_element = document.getElementById("page_subtitle");
